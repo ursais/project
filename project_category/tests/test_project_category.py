@@ -10,9 +10,11 @@ class TestProjectCategory(TransactionCase):
         super(TestProjectCategory, self).setUp()
         self.cat = self.env['project.type'].create({
             'name': 'General'
+            'code': 'GE'
         })
         self.cat2 = self.env['project.type'].create({
             'name': 'Discussion'
+            'code': 'GE-DIS'
         })
 
     def test_complete_name(self):

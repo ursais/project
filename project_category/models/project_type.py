@@ -38,6 +38,9 @@ class ProjectType(models.Model):
     task_ok = fields.Boolean(
         string='Can be applied for tasks'
     )
+    code = fields.Char(
+        string='Code'
+    )
 
     @api.constrains('parent_id')
     def check_parent_id(self):
