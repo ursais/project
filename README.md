@@ -21,7 +21,7 @@ Available addons
 addon | version | summary
 --- | --- | ---
 [project_budget](project_budget/) | 12.0.1.0.0 | Adds budget management to projects.
-[project_category](project_category/) | 12.0.1.1.0 | Project Types
+[project_category](project_category/) | 12.0.1.2.0 | Project Types
 [project_custom_info](project_custom_info/) | 12.0.2.0.0 | Add custom info in projects
 [project_deadline](project_deadline/) | 12.0.1.0.0 | Start date and deadline of projects.
 [project_description](project_description/) | 12.0.1.0.0 | Add a description to projects
@@ -40,7 +40,7 @@ addon | version | summary
 [project_stock_request](project_stock_request/) | 12.0.1.0.0 | Create stock requests from a projects and project tasks
 [project_tag](project_tag/) | 12.0.1.0.0 | Project Tags
 [project_task_add_very_high](project_task_add_very_high/) | 12.0.1.0.1 | Adds extra options 'High' and 'Very High' on tasks
-[project_task_code](project_task_code/) | 12.0.1.0.2 | Sequential Code for Tasks
+[project_task_code](project_task_code/) | 12.0.1.1.0 | Sequential Code for Tasks
 [project_task_default_stage](project_task_default_stage/) | 12.0.1.0.0 | Recovery default task stage projects from v8
 [project_task_dependency](project_task_dependency/) | 12.0.1.0.0 | Enables to define dependencies (other tasks) of a task
 [project_task_digitized_signature](project_task_digitized_signature/) | 12.0.1.0.0 | Project Task Digitized Signature
@@ -54,7 +54,7 @@ addon | version | summary
 [project_timeline](project_timeline/) | 12.0.1.3.1 | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 12.0.1.0.1 | Shows the progress of tasks on the timeline view.
 [project_timeline_task_dependency](project_timeline_task_dependency/) | 12.0.1.0.0 | Render arrows between dependencies.
-[project_timesheet_time_control](project_timesheet_time_control/) | 12.0.2.1.0 | Project timesheet time control
+[project_timesheet_time_control](project_timesheet_time_control/) | 12.0.2.1.1 | Project timesheet time control
 [project_wbs](project_wbs/) | 12.0.1.1.1 | Apply Work Breakdown Structure
 [project_wbs_task](project_wbs_task/) | 12.0.1.0.0 | Work Breakdown Structure - Tasks
 
