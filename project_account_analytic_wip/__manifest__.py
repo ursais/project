@@ -9,7 +9,7 @@
     "author": "Open Source Integrators, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/project",
     "license": "AGPL-3",
-    "depends": ["project", "account_analytic_wip"],
+    "depends": ["sale_timesheet", "account_analytic_wip"],
     "data": [],
     "installable": True,
     "maintainer": "dreispt",
