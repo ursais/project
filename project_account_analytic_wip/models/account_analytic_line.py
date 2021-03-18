@@ -14,7 +14,7 @@ class AnalyticLine(models.Model):
         Add Product and Tracking Item to Timesheet Line
         """
         res = super()._timesheet_preprocess(vals)
-        if vals.get("task_id") or vals.get("unit_amount"):
+        if vals.get("task_id") and vals.get("unit_amount"):
             task = self.env["project.task"].browse(vals["task_id"])
             so_line = task.sale_line_id
             if "product_id" not in vals and so_line.product_id:
