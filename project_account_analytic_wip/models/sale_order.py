@@ -11,12 +11,14 @@ class SaleOrder(models.Model):
     - on confirm
     - on add line or edit quantity on confirmed SO lines
     """
+
     _inherit = "sale.order"
 
     def action_confirm(self):
         res = super().action_confirm()
         self.mapped("order_line").set_tracking_item(update_planned=True)
         return res
+
 
 class SaleOrderLine(models.Model):
     _name = "sale.order.line"
@@ -46,9 +48,11 @@ class SaleOrderLine(models.Model):
         - SO has an Analytic Account
         - Product is type service
         """
-        return self.filtered(lambda l: l.order_id.state == "sale")\
-            .filtered("order_id.analytic_account_id")\
+        return (
+            self.filtered(lambda l: l.order_id.state == "sale")
+            .filtered("order_id.analytic_account_id")
             .filtered(lambda l: l.product_id.type == "service")
+        )
 
     @api.model
     def create(self, vals):
@@ -59,6 +63,5 @@ class SaleOrderLine(models.Model):
     def write(self, vals):
         res = super().write(vals)
         if "product_uom_qty" in vals or "price_unit" in vals:
-            import pudb; pu.db
             self.set_tracking_item(update_planned=True)
         return res
