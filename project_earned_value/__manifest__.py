@@ -4,7 +4,7 @@
 
 {
     "name": "Project Earned Value",
-    "version": "12.0.1.0.0",
+    "version": "15.0.1.0.0",
     "license": "AGPL-3",
     "author": """Open Source Integrators,
         Serpent Consulting Services,
@@ -12,14 +12,13 @@
     "summary": """This module adds measures to the Task Analysis report and
         provides a basic Earned Value Analysis on the project overview.""",
     "category": "Project",
-    "maintainers": ["Khalid-SerpentCS"],
+    "maintainers": ["Open Source Integrators"],
     "website": "https://github.com/OCA/project",
     'depends': [
         "project",
         "sale_timesheet"
     ],
     "data": [
-        "views/project_views.xml",
         "report/project_report_views.xml",
     ],
     "qweb": [

@@ -7,6 +7,7 @@ from odoo import fields, models
 class ProjectTaskType(models.Model):
     _inherit = "project.task.type"
 
-    ev_percent = fields.Integer('Earned Value %',
-                                help='Percentage applied to the EV calculation'
-                                     ' of Tasks in this stage')
+    ev_percent = fields.Integer(
+        "Earned Value %",
+        help="Percentage applied to the EV calculation" " of Tasks in this stage",
+    )
