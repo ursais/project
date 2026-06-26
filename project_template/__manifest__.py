@@ -3,15 +3,17 @@
 
 {
     "name": "Project Templates",
-    "summary": """Project Templates""",
+    "summary": (
+        "Preserves task ending dates when creating projects from templates "
+        "(extends Odoo 19 core templates)."
+    ),
     "author": "Patrick Wilson, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/project",
     "category": "Project Management",
-    "version": "19.0.1.0.0",
+    "version": "19.0.2.0.0",
     "license": "AGPL-3",
     "depends": ["project"],
-    "data": ["views/project.xml"],
     "application": False,
-    "development_status": "Beta",
+    "development_status": "Mature",
     "maintainers": ["patrickrwilson"],
 }
